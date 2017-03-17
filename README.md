@@ -1,6 +1,6 @@
-# learnthai-frontend
+# 8-semester-course-planner
 
-> andersengroup
+> Bus app
 
 ## Build Setup
 
