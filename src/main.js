@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 import _ from 'lodash'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
@@ -22,6 +23,7 @@ Vue.component('lt-game-level2', GameLevel2)
 
 Vue.use(VueRouter)
 Vue.use(ElementUI)
+Vue.use(VueResource)
 
 const routes = [
   {path: '/', component: Home},
@@ -40,3 +42,5 @@ new Vue({
   template: '<App/>',
   components: { App }
 }).$mount('#app')
+
+Vue.config.devtools = true

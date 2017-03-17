@@ -4,15 +4,14 @@
       <div class="navbar-brand" id="lt-navbar-logo">
         <div class="row">
           <div class="col-md-4 col-md-offset-0">
-            <img src="../../static/images/icons/learnthai_icon.jpg" id="lt-navbar-icon">
+            <img src="../../static/images/icons/tcat_icon2.png" id="lt-navbar-icon">
           </div>
         </div>
-        <div class="row">Learn Thai</div>
+        <div class="row" id="sa-tcat-icon">BusApp</div>
       </div>
       <el-menu-item index="1"><i class="fa fa-home"></i><span class="sr-only">(current)</span></el-menu-item>
       <el-menu-item index="2"><i class="fa fa-history"></i></el-menu-item>
-      <el-menu-item index="3">What is Learn Thai?</el-menu-item>
-      <el-menu-item index="4"><i class="fa fa-play"></i></el-menu-item>
+      <el-menu-item index="3">What is BusApp?</el-menu-item>
     </el-menu>
 
     <!-- content -->
@@ -49,5 +48,9 @@
   #lt-navbar-logo {
     padding-top: 5px;
     padding-left: 20px;
+  }
+
+  #sa-tcat-icon {
+    text-align: center;
   }
 </style>
