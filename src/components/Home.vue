@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="jumbotron" id="home-card">
-      <h3>Please input your destination below <i class="fa fa-smile-o" aria-hidden="true"></i></h3>
+      <h3>Please input your destination below</h3>
       <hr>
       <p><el-button type="primary" @click="goGame">From</el-button></p>
       <el-input placeholder="where are you?" v-model="fromLoc"></el-input>

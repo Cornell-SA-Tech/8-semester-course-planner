@@ -1,6 +1,6 @@
-# A Bus App 🚎 🛣 📲 ‍💻 😍
+# A TCAT Bus App 🚎 🛣 📲 ‍💻 😍
 
-> Bus app
+> SA Tech Project
 
 ## Build Setup
 
