@@ -1,4 +1,4 @@
-# 8-semester-course-planner
+# A Bus App 🚎 🛣 📲 ‍💻 😍
 
 > Bus app
 
