@@ -14,6 +14,8 @@ import GameLevel1 from './components/GameLevel1.vue'
 import GameLevel2 from './components/GameLevel2.vue'
 import Navbar from './components/Navbar.vue'
 import HistoryRow from './components/HistoryRow.vue'
+import locale from 'element-ui/lib/locale/lang/en'
+// import VueTimepicker from 'vue-time-picker'
 
 Vue.component('lt-navbar', Navbar)
 Vue.component('lt-history-row', HistoryRow)
@@ -22,7 +24,7 @@ Vue.component('lt-game-level1', GameLevel1)
 Vue.component('lt-game-level2', GameLevel2)
 
 Vue.use(VueRouter)
-Vue.use(ElementUI)
+Vue.use(ElementUI, { locale })
 Vue.use(VueResource)
 
 const routes = [

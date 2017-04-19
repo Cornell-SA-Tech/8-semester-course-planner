@@ -1,22 +1,42 @@
 <template>
   <div class="container">
     <div class="jumbotron" id="home-card">
-      <h3>Please input your destination below</h3>
+      <el-row type="flex" class="row-bg" justify="center">
+        <h3>Please input your destination below</h3>
+      </el-row>
       <hr>
-      <p><el-button type="primary" @click="goGame">From</el-button></p>
-      <el-input placeholder="where are you?" v-model="fromLoc"></el-input>
 
-      <p><el-button type="primary" @click="goHistory">To</el-button></p>
-      <el-input placeholder="what's your destination?" v-model="toLoc"></el-input>
+      <el-row type="flex" class="row-bg" justify="start">
+        <p>From:</p>
+        <el-input placeholder="where are you?" v-model="fromLoc"></el-input>
+      </el-row>
 
-      <div class="block">
-        <span class="demonstration">Date and time</span>
-        <el-date-picker
-          v-model="value1"
-          type="datetime"
-          placeholder="Select date and time">
-        </el-date-picker>
-      </div>
+      <el-row type="flex" class="row-bg" justify="start">
+        <!-- <vue-timepicker></vue-timepicker> -->
+      </el-row>
+
+
+      <el-row type="flex" class="row-bg" justify="start">
+        <p>To:</p>
+        <el-input placeholder="what's your destination?" v-model="toLoc"></el-input>
+      </el-row>
+
+      <el-date-picker
+        v-model="pickedDate"
+        type="date"
+        placeholder="Pick a day">
+      </el-date-picker>
+
+
+      <el-time-select
+        v-model="pickedTime"
+        :picker-options="{
+          start: '00:00',
+          step: '00:01',
+          end: '23:59'
+        }"
+        placeholder="Select time">
+      </el-time-select>
     </div>
   </div>
 </template>
@@ -25,9 +45,8 @@
   export default {
     data() {
       return {
-        fromLoc: '',
-        toLoc: '',
-        value1: ''
+        pickedDate: '',
+        pickedTime: ''
       }
     },
     props: ['currGameLevel'],
@@ -43,9 +62,10 @@
 </script>
 
 <style type="text/css">
-  #home-card {
-    margin-top: 3rem;
-    background-color: rgba(255,255,255,0.7);
-    text-align: center;
+  #map {
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+    margin-left: 25%;
   }
 </style>
