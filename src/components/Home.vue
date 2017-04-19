@@ -62,9 +62,10 @@
 </script>
 
 <style type="text/css">
-  #home-card {
-    margin-top: 3rem;
-    background-color: rgba(255,255,255,0.7);
-    text-align: center;
+  #map {
+    width: 50%;
+    height: 400px;
+    background-color: grey;
+    margin-left: 25%;
   }
 </style>
