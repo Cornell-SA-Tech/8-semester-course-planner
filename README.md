@@ -1,6 +1,6 @@
-# 8-semester-course-planner
+# A TCAT Bus App 🚎 🛣 📲 ‍💻 😍
 
-> Bus app
+> SA Tech Project
 
 ## Build Setup
 
