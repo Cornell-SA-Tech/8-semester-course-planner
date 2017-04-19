@@ -15,6 +15,7 @@ import GameLevel2 from './components/GameLevel2.vue'
 import Navbar from './components/Navbar.vue'
 import HistoryRow from './components/HistoryRow.vue'
 import locale from 'element-ui/lib/locale/lang/en'
+// import VueTimepicker from 'vue-time-picker'
 
 Vue.component('lt-navbar', Navbar)
 Vue.component('lt-history-row', HistoryRow)

@@ -21,15 +21,22 @@
         <el-input placeholder="what's your destination?" v-model="toLoc"></el-input>
       </el-row>
 
-      <div class="block">
-        <span class="demonstration">Default</span>
-        <el-date-picker
-          v-model="value1"
-          type="datetime"
-          placeholder="Select date and time">
-        </el-date-picker>
-      </div>
+      <el-date-picker
+        v-model="pickedDate"
+        type="date"
+        placeholder="Pick a day">
+      </el-date-picker>
 
+
+      <el-time-select
+        v-model="pickedTime"
+        :picker-options="{
+          start: '00:00',
+          step: '00:01',
+          end: '23:59'
+        }"
+        placeholder="Select time">
+      </el-time-select>
     </div>
   </div>
 </template>
@@ -38,30 +45,8 @@
   export default {
     data() {
       return {
-        pickerOptions1: {
-          shortcuts: [{
-            text: 'Today',
-            onClick(picker) {
-              picker.$emit('pick', new Date());
-            }
-          }, {
-            text: 'Yesterday',
-            onClick(picker) {
-              const date = new Date();
-              date.setTime(date.getTime() - 3600 * 1000 * 24);
-              picker.$emit('pick', date);
-            }
-          }, {
-            text: 'A week ago',
-            onClick(picker) {
-              const date = new Date();
-              date.setTime(date.getTime() - 3600 * 1000 * 24 * 7);
-              picker.$emit('pick', date);
-            }
-          }]
-        },
-        value1: '',
-        value2: ''
+        pickedDate: '',
+        pickedTime: ''
       }
     },
     props: ['currGameLevel'],
